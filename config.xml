@@ -17,7 +17,11 @@
 	Bruce E. Gordon
   </author>
 
-<platform name="android" />
+ <platform name="android">
+     <preference name="android-minSdkVersion" value="28" />
+ </platform>
+
+<icon src="icon.png" />
 
 </widget>
 
