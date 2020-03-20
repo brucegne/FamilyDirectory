@@ -16,8 +16,10 @@
   <author href="https://appsmade4u.com" email="support@phonegap.com">
 	Bruce E. Gordon
   </author>
+  <plugin name="cordova-plugin-barcodescanner" />
+  <plugin name="cordova-plugin-battery-status" />  
 
- <platform name="android">
+  <platform name="android">
      <preference name="android-minSdkVersion" value="28" />
  </platform>
 
