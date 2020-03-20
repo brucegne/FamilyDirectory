@@ -16,6 +16,6 @@
 window.addEventListener("batterystatus", onBatteryStatus, false);
 
 function onBatteryStatus(status) {
-    document.getElementById("batstat").innerHTML=("Level: " + status.level + " isPlugged: " + status.isPlugged);
+    document.getElementById("batstat").innerHTML="Level: " + status.level + " isPlugged: " + status.isPlugged;
 }
 
