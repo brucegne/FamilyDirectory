@@ -1,7 +1,6 @@
 
-<script>
-
-  const firebaseConfig = {
+  
+   const firebaseConfig = {
     apiKey: "AIzaSyBFTDAUZWhpPkKGGiE1DvILAlI0yV-msNw",
     authDomain: "family-863a0.firebaseapp.com",
     databaseURL: "https://family-863a0.firebaseio.com",
@@ -13,4 +12,10 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 
-</script>
+
+window.addEventListener("batterystatus", onBatteryStatus, false);
+
+function onBatteryStatus(status) {
+    document.getElementById("batstat").innerHTML=("Level: " + status.level + " isPlugged: " + status.isPlugged);
+}
+
