@@ -3,9 +3,6 @@
 <head>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <script scr="js/bootstrap.min.js"></script>
-  <script src="js/firebase.js"></script>
-  <script src="index.js"></script>
-  <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
 </head>
 <body>
 
@@ -22,14 +19,11 @@
 <div id="batstat">Waiting...
   
   </div>
- <script>
+<script src="js/firebase.js"></script>
+<script src="index.js"></script>
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+
   
-  document.addEventListener("online", onOnline, false);
- 
-function onOnline() {
-    alert("You is online");
-}
-</script>
 </body>
 </html>
 

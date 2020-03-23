@@ -11,11 +11,16 @@
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
+ref = firebase.database().ref();
+ref2 = ref.child('/Starter');
 
+ref2.on('value', function(snap){
+      document.getElementById('batstat').innerHTML=snap.val();
+});
 
-window.addEventListener("batterystatus", onBatteryStatus, false);
-
-function onBatteryStatus(status) {
-    document.getElementById("batstat").innerHTML="Level: " + status.level + " isPlugged: " + status.isPlugged;
+document.addEventListener("online", onOnline, false);
+ 
+function onOnline() {
+    alert("You is online");
 }
 
